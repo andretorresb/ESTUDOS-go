@@ -3,11 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	resultado := soma(3, 5)
-	fmt.Println("Resultado da soma:", resultado)
+	var fixo = 5
 
-}
+	multiplica := func(x int) int {
+		return x * fixo
+	}
 
-func soma(a int, b int) int {
-	return a + b
+	resultado := multiplica(10)
+	fmt.Println(resultado)
+
 }
